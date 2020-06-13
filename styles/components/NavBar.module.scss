@@ -1,0 +1,21 @@
+@import '../config';
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  a, svg {
+    margin: 0.5rem;
+    padding: 0 0.5rem;
+    color: $primary;
+    
+    // must be above hover to control cascading of already visited sites
+    &:visited {
+      color: $primary
+    }
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}

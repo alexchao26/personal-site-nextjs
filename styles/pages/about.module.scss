@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+  border: 5px solid orangered;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

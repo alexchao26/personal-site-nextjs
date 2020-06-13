@@ -1,0 +1,14 @@
+@import './config';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  
+  font-family: $font-stack;
+  line-height: 1.5;
+  font-size: 1.2rem;
+
+  background-color: #222525;
+  color: #d3d3d3;
+}

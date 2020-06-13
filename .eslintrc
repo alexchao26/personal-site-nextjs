@@ -1,0 +1,29 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    // "no-param-reassign": "off",
+    // "consistent-return": "off",
+    "no-console": "warn",
+    "react/prop-types": "off",
+    // "linebreak-style": "off" // windows CRLF LF thing?
+    "func-names": "off",
+    // "arrow-parens": ["error", "as-needed"],
+    // allows for i++ or i-- in third arg of for loop
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "camelcase": "off",
+    // "arrow-body-style": "off"
+    "react/jsx-filename-extension": "off",
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+  },
+  // "ignorePatterns": [
+  //   "node_modules/"
+  // ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true,
+    "jest": true
+  }
+}
