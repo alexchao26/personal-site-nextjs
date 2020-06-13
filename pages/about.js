@@ -2,7 +2,7 @@ import styles from '@styles/pages/about.module.scss';
 import Layout from '@components/layout';
 
 export default () => (
-  <Layout>
+  <Layout currentPage="about">
     <div className={styles.container}>
       <section className={styles.column}>
         <h2>Alex Chao</h2>
