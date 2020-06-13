@@ -23,9 +23,9 @@ const NavBar = ({ currentPage }) => (
     </Link>
 
     {/* About Me */}
-    <Link href="/about">
-      <a style={{ color: currentPage === 'about' ? highlightColor : primaryColor }}>
-          About Me
+    <Link href="/stack">
+      <a style={{ color: currentPage === 'stack' ? highlightColor : primaryColor }}>
+        Stack
       </a>
     </Link>
 

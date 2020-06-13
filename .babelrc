@@ -6,7 +6,8 @@
       "alias": {
         "@styles": "./styles",
         "@components": "./components",
-        "@pages": "./pages"
+        "@pages": "./pages",
+        "@content": "./content"
       }
     }]
   ]

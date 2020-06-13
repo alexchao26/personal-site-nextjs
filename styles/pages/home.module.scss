@@ -1,3 +1,14 @@
+@import '../config';
+
 .container {
+  display: flex;
+  width: 100%;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.borderCircle {
+  height: 10rem;
+  border-radius: 50%;
 }

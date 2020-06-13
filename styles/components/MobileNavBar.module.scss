@@ -1,0 +1,52 @@
+@import '../config';
+$menu-background-color: #2d2e2e;
+
+.container {
+  padding: 1rem 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.menuOverlay {
+  position: fixed;
+  height: 100vh;
+  // start width as zero, transition it to larger size on CSS style addition
+  width: 0;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: $menu-background-color;
+  overflow-x: hidden;
+  transition: 0.1s width ease-in-out;
+}
+
+// new size to transition to
+.openMenu {
+  color: $primary;
+  width: 45vw;
+}
+
+.menuContents {
+  position: relative;
+  text-align: left;
+  padding: 1rem 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+
+  a, div {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $primary;
+    display: block;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+// hide if on a large enough screen
+@media (min-width: $small-width) {
+  .container {
+    display: none;
+  }
+}

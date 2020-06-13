@@ -1,0 +1,36 @@
+@import '../config';
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.borderCircle {
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.list {
+  padding-left: 5rem;
+  width: 50vw;
+  max-width: 400px;
+  text-align: left;
+
+  h5 {
+    margin-bottom: 0;
+  }
+  span {
+    word-wrap: break-word;
+  }
+
+}
+@media (max-width: $small-width) {
+  .list {
+    padding-left: 0;
+    width: 80vw;
+    text-align: center;
+  }
+}
