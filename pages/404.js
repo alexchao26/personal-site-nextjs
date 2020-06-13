@@ -1,5 +1,5 @@
-import { container } from '../styles/pages/404.module.scss';
-import Layout from '../components/layout';
+import { container } from '@styles/pages/404.module.scss';
+import Layout from '@components/layout';
 
 export default () => (
   <Layout>

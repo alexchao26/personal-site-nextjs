@@ -1,17 +1,18 @@
 import Link from 'next/link';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 
-import styles from '../styles/components/NavBar.module.scss';
+import styles from '@styles/components/NavBar.module.scss';
 
-const NavBar = (props) => (
+const NavBar = () => (
   <div className={styles.container}>
     {/* Home
         NOTE: passHref prop is for Links w/ anchor tags that wrap nested components
     */}
     <Link href="/" passHref>
       <a>
-        <FontAwesomeIcon icon={faHome} />
+        <FontAwesomeIcon icon={faHome} size="sm" />
       </a>
     </Link>
 

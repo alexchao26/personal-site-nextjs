@@ -25,5 +25,11 @@
     "es6": true,
     "mocha": true,
     "jest": true
+  },
+  // to make eslint happy w/ babel aliases https://www.robinwieruch.de/babel-module-resolver
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
   }
 }

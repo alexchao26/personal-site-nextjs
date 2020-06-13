@@ -1,5 +1,5 @@
-import styles from '../styles/pages/about.module.scss';
-import Layout from '../components/layout';
+import styles from '@styles/pages/about.module.scss';
+import Layout from '@components/layout';
 
 export default () => (
   <Layout>

@@ -1,8 +1,8 @@
 import Head from 'next/head';
 // import Link from 'next/link';
-import styles from '../styles/components/layout.module.scss';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import styles from '@styles/components/layout.module.scss';
+import NavBar from '@components/NavBar';
+import Footer from '@components/Footer';
 
 // HOC to add layouts to all pages
 export default ({ children }) => (
@@ -14,7 +14,7 @@ export default ({ children }) => (
     </Head>
     <NavBar />
     {/* render the wrapped children (HOC) */}
-    <main>{children}</main>
+    <main className={styles.mainContent}>{children}</main>
     <Footer />
   </div>
 );

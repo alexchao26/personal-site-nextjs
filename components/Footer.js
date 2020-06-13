@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-import styles from '../styles/components/Footer.module.scss';
+import styles from '@styles/components/Footer.module.scss';
 
 export default () => (
   <footer className={styles.container}>

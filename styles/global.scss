@@ -1,4 +1,8 @@
 @import './config';
+// to prevent a "snapping" of fortawesome icons from very large to the correct size
+// if CSS is missing when DOM renders SVG, then it will render very large, then when it picks up
+// CSS, it will snap down. Instead, ensure that the css is loaded beforehand
+@import 'node_modules/@fortawesome/fontawesome-svg-core/styles';
 
 html,
 body {
