@@ -3,12 +3,16 @@
 .container {
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid $primary;
+  margin-bottom: 1rem;
+  width: 100%;
 
   a, svg {
     margin: 0.5rem;
     padding: 0 0.5rem;
     color: $primary;
-    
+    text-decoration: none;
+
     // must be above hover to control cascading of already visited sites
     &:visited {
       color: $primary

@@ -1,4 +1,10 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+}
+
 .mainContent {
   display: flex;
   justify-content: center;
+  padding-bottom: 4.5rem;
 }

@@ -6,7 +6,7 @@ import Footer from '@components/Footer';
 
 // HOC to add layouts to all pages
 export default ({ children, currentPage }) => (
-  <div className={styles.container}>
+  <div className={styles.page}>
     <Head>
       <title>Alex Chao</title>
       <link rel="icon" href="/favicon.ico" />
