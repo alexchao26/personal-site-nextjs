@@ -8,3 +8,14 @@
   justify-content: center;
   padding-bottom: 5rem;
 }
+
+// NOTE: Attempting to resolve mobile Safari & Chrome from hiding footer
+// https://www.eventbrite.com/engineering/mobile-safari-why/
+.brokenMobileBrowser {
+  /* Allows content to fill the viewport and go beyond the bottom */
+  height: 100%;
+  /* Allows you to scroll below the viewport; default value is visible */
+  overflow-y: scroll;
+  /* To smooth any scrolling behavior */
+  -webkit-overflow-scrolling: touch;
+}

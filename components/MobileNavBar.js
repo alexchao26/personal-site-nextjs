@@ -6,9 +6,12 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import styles from '@styles/components/MobileNavBar.module.scss';
 
+const highlightColor = 'orange';
+const primaryColor = '#d3d3d3';
+
 // TODO pull all links and text out into a config file so that both Mobile & Desktop Navs get the
 // TODO   same contents
-const MobileNavBar = () => {
+const MobileNavBar = ({ currentPage }) => {
   const [menuOpen, toggleMenu] = useState(false);
   return (
     <div className={styles.container}>
@@ -32,27 +35,37 @@ const MobileNavBar = () => {
           </div>
           {/* Home */}
           <Link href="/">
-            <a>Home</a>
+            <a style={{ color: currentPage === 'home' ? highlightColor : primaryColor }}>
+              Home
+            </a>
           </Link>
 
           {/* About Me */}
           <Link href="/stack">
-            <a>Stack</a>
+            <a style={{ color: currentPage === 'stack' ? highlightColor : primaryColor }}>
+              Stack
+            </a>
           </Link>
 
           {/* Projects */}
           <Link href="/projects">
-            <a>Projects</a>
+            <a style={{ color: currentPage === 'projects' ? highlightColor : primaryColor }}>
+              Projects
+            </a>
           </Link>
 
           {/* Articles */}
           <Link href="/articles">
-            <a>Articles</a>
+            <a style={{ color: currentPage === 'articles' ? highlightColor : primaryColor }}>
+              Articles
+            </a>
           </Link>
 
           {/* Contact Me */}
           <Link href="/contact">
-            <a>Contact Me</a>
+            <a style={{ color: currentPage === 'contact' ? highlightColor : primaryColor }}>
+              Contact Me
+            </a>
           </Link>
         </div>
       </div>
