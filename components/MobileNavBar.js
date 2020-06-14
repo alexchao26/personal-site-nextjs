@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-import { navContent, highlightColor, primaryColor } from '@components/NavBar';
+import { navContent } from '@components/NavBar';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -37,7 +37,7 @@ const MobileNavBar = ({ currentPage }) => {
           {/* Nav Links */}
           {navContent.map(({ link, currentPageProp, text }) => (
             <Link key={text} href={link}>
-              <a style={{ color: currentPage === currentPageProp ? highlightColor : primaryColor }}>
+              <a className={currentPage === currentPageProp ? styles.currentPage : ''}>
                 {text}
               </a>
             </Link>

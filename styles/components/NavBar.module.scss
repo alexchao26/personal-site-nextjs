@@ -21,7 +21,12 @@
     &:hover {
       color: $hover-color;
     }
-  }  
+  }
+
+  // highlighting for the current page
+  a.currentPage {
+    color: $hover-color;
+  }
 }
 
 @media (max-width: $small-width) {

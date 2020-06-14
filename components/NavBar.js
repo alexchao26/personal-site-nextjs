@@ -4,9 +4,6 @@ import Link from 'next/link';
 
 import styles from '@styles/components/NavBar.module.scss';
 
-export const highlightColor = 'orange';
-export const primaryColor = '#d3d3d3';
-
 export const navContent = [
   {
     link: '/',
@@ -31,7 +28,7 @@ const NavBar = ({ currentPage }) => (
   <div className={styles.container}>
     {navContent.map(({ link, currentPageProp, text }) => (
       <Link key={text} href={link}>
-        <a style={{ color: currentPage === currentPageProp ? highlightColor : primaryColor }}>
+        <a className={currentPage === currentPageProp ? styles.currentPage : ''}>
           {text}
         </a>
       </Link>

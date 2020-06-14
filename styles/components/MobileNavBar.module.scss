@@ -46,6 +46,9 @@ $menu-background-color: #2d2e2e;
       color: $hover-color;
     }
   }
+  a.currentPage {
+    color: $hover-color;
+  }
 }
 
 // hide if on a large enough screen
