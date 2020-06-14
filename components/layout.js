@@ -12,12 +12,14 @@ export default ({ children, currentPage }) => {
   // access browser APIs via useEffect (will run JS when loaded to the browser)
   useEffect(() => {
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent
-    if (navigator.userAgent.includes('Mobi') && navigator.userAgent.includes('Safari')) {
+    if (navigator.userAgent.includes('Mobi')
+    //  && navigator.userAgent.includes('Safari')
+    ) {
       setIsBrokenBrowser(true);
     }
   }, []);
   return (
-    <div className={`${styles.page} ${isBrokenBrowser ? styles.brokenMobileBrowser : ''}`}>
+    <div className={styles.page}>
       <Head>
         <title>Alex Chao</title>
         <link rel="icon" href="/favicon.ico" />
@@ -28,7 +30,11 @@ export default ({ children, currentPage }) => {
       <MobileNavBar currentPage={currentPage} />
       {/* render the wrapped children (HOC) */}
       <main className={styles.mainContent}>{children}</main>
-      <Footer />
+
+      {/* Footer Component, isBrokenBrowser prop is for making the footer appear about menu bar
+          on iOS Safari & Chrome (at least)
+      */}
+      <Footer isBrokenBrowser={isBrokenBrowser} />
     </div>
   );
 };

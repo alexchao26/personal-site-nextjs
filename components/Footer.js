@@ -3,8 +3,8 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import styles from '@styles/components/Footer.module.scss';
 
-export default () => (
-  <footer className={styles.container}>
+export default ({ isBrokenBrowser }) => (
+  <footer className={`${styles.container} ${isBrokenBrowser ? styles.floatFooter : ''}`}>
     <a
       href="https://github.com/alexchao26"
       target="_blank"
