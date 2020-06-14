@@ -14,11 +14,7 @@ const NavBar = ({ currentPage }) => (
       */}
     <Link href="/" passHref>
       <a>
-        <FontAwesomeIcon
-          icon={faHome}
-          size="sm"
-          style={{ color: currentPage === 'home' ? highlightColor : primaryColor }}
-        />
+        Home
       </a>
     </Link>
 

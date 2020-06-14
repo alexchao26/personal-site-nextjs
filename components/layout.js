@@ -9,11 +9,12 @@ import styles from '@styles/components/layout.module.scss';
 // HOC to add layouts to all pages
 export default ({ children, currentPage }) => {
   const [isBrokenBrowser, setIsBrokenBrowser] = useState(false);
-  // access browser APIs via useEffect (will run JS when loaded to the browser)
+  // use useEffect to access browser APIs via useEffect (will run JS when loaded to the browser)
   useEffect(() => {
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent
-    if (navigator.userAgent.includes('Mobi')
-    //  && navigator.userAgent.includes('Safari')
+    if (
+      navigator.userAgent.includes('Mobi')
+      && navigator.userAgent.includes('Safari')
     ) {
       setIsBrokenBrowser(true);
     }
