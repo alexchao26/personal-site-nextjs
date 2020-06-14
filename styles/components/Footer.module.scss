@@ -27,7 +27,7 @@
   }
 }
 
-// hacky solution to show the footer
+// hacky solution to show the footer on mobile browsers that hide stuff under the menu bar
 .floatFooter {
-  bottom: 50px;
+  bottom: 3rem;
 }

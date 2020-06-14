@@ -28,6 +28,7 @@ export default ({ children, currentPage }) => {
       {/* One of these NavBars will be hidden depending on page size */}
       <NavBar currentPage={currentPage} />
       <MobileNavBar currentPage={currentPage} />
+
       {/* render the wrapped children (HOC) */}
       <main className={styles.mainContent}>{children}</main>
 

@@ -1,17 +1,20 @@
-// import Head from 'next/head';
-// import Link from 'next/link';
 import Layout from '@components/layout';
 import styles from '@styles/pages/home.module.scss';
+import techList from '@content/techList';
 
-// This is the default landing page -> '/'
 export default () => (
   <Layout currentPage="home">
     <div className={styles.container}>
-      <h1 className={styles.center}>Alex Chao</h1>
-      <img src="/images/alex.jpg" className={`${styles.borderCircle} ${styles.center}`} alt="Alex" />
-      <p>Native New Yorker</p>
-      <p>Rock Climber</p>
-      <p>Cheeseburger Enthusiast</p>
+      <h1 className={styles.marginSm}>Alex Chao</h1>
+      <h3 className={styles.marginSm}>Software Engineer</h3>
+
+      {/* Tech Stack */}
+      {techList.map(({ title, list }) => (
+        <div key={title} className={styles.list}>
+          <h5>{`${title}:`}</h5>
+          <span>{list}</span>
+        </div>
+      ))}
     </div>
   </Layout>
 );

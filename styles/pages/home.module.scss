@@ -12,3 +12,30 @@
   height: 10rem;
   border-radius: 50%;
 }
+
+.margin {
+  &Sm {
+    margin: 0.5rem 0;
+  }
+  &Md {
+    margin: 1rem 0;
+  }
+}
+
+.list {
+  padding-left: 5rem;
+  width: 50vw;
+  max-width: 400px;
+  text-align: left;
+
+  h5 {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: $small-width) {
+  .list {
+    padding-left: 0;
+    width: 80vw;
+    text-align: center;
+  }
+}

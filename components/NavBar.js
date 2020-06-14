@@ -23,9 +23,9 @@ const NavBar = ({ currentPage }) => (
     </Link>
 
     {/* About Me */}
-    <Link href="/stack">
-      <a style={{ color: currentPage === 'stack' ? highlightColor : primaryColor }}>
-        Stack
+    <Link href="/about">
+      <a style={{ color: currentPage === 'about' ? highlightColor : primaryColor }}>
+        About Me
       </a>
     </Link>
 
@@ -40,13 +40,6 @@ const NavBar = ({ currentPage }) => (
     <Link href="/articles">
       <a style={{ color: currentPage === 'articles' ? highlightColor : primaryColor }}>
           Articles
-      </a>
-    </Link>
-
-    {/* Contact Me */}
-    <Link href="/contact">
-      <a style={{ color: currentPage === 'contact' ? highlightColor : primaryColor }}>
-          Contact Me
       </a>
     </Link>
   </div>
