@@ -4,7 +4,7 @@ import styles from '@styles/pages/projects.module.scss';
 export default () => (
   <div className={styles.container}>
     {projectsContent.map(({ name }) => (
-      <p>{name}</p>
+      <p key={name}>{name}</p>
     ))}
   </div>
 );

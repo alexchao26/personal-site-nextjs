@@ -37,7 +37,12 @@ const MobileNavBar = ({ currentPage }) => {
           {/* Nav Links */}
           {navContent.map(({ link, text }) => (
             <Link key={text} href={link}>
-              <a className={currentPage === link ? styles.currentPage : ''}>
+              <a
+                role="button"
+                tabIndex={0}
+                className={currentPage === link ? styles.currentPage : ''}
+                onClick={() => toggleMenu(false)}
+              >
                 {text}
               </a>
             </Link>

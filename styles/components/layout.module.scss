@@ -7,5 +7,12 @@
 .mainContent {
   display: flex;
   justify-content: center;
-  padding-bottom: 8rem;
+  padding-bottom: 2rem;
+
+  // apply an after pseudo-element to the last element in the main container
+  *:last-of-type::after {
+    height: 50px;
+    width: 100%;
+    content: "";
+  }
 }
