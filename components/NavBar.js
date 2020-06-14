@@ -1,43 +1,41 @@
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faHome } from '@fortawesome/free-solid-svg-icons';
 
 import styles from '@styles/components/NavBar.module.scss';
 
-const highlightColor = 'orange';
-const primaryColor = '#d3d3d3';
+export const highlightColor = 'orange';
+export const primaryColor = '#d3d3d3';
+
+export const navContent = [
+  {
+    link: '/',
+    currentPageProp: 'home',
+    text: 'Home',
+  }, {
+    link: '/about',
+    currentPageProp: 'about',
+    text: 'About Me',
+  }, {
+    link: '/projects',
+    currentPageProp: 'projects',
+    text: 'Projects',
+  }, {
+    link: '/articles',
+    currentPageProp: 'articles',
+    text: 'Articles',
+  },
+];
 
 const NavBar = ({ currentPage }) => (
   <div className={styles.container}>
-    {/* Home
-        NOTE: passHref prop is for Links w/ anchor tags that wrap nested components
-      */}
-    <Link href="/" passHref>
-      <a>
-        Home
-      </a>
-    </Link>
-
-    {/* About Me */}
-    <Link href="/about">
-      <a style={{ color: currentPage === 'about' ? highlightColor : primaryColor }}>
-        About Me
-      </a>
-    </Link>
-
-    {/* Projects */}
-    <Link href="/projects">
-      <a style={{ color: currentPage === 'projects' ? highlightColor : primaryColor }}>
-          Projects
-      </a>
-    </Link>
-
-    {/* Articles */}
-    <Link href="/articles">
-      <a style={{ color: currentPage === 'articles' ? highlightColor : primaryColor }}>
-          Articles
-      </a>
-    </Link>
+    {navContent.map(({ link, currentPageProp, text }) => (
+      <Link key={text} href={link}>
+        <a style={{ color: currentPage === currentPageProp ? highlightColor : primaryColor }}>
+          {text}
+        </a>
+      </Link>
+    ))}
   </div>
 );
 
