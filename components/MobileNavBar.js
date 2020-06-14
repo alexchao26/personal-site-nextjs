@@ -35,9 +35,9 @@ const MobileNavBar = ({ currentPage }) => {
           </div>
 
           {/* Nav Links */}
-          {navContent.map(({ link, currentPageProp, text }) => (
+          {navContent.map(({ link, text }) => (
             <Link key={text} href={link}>
-              <a className={currentPage === currentPageProp ? styles.currentPage : ''}>
+              <a className={currentPage === link ? styles.currentPage : ''}>
                 {text}
               </a>
             </Link>
