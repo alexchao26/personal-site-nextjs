@@ -1,0 +1,75 @@
+@import '../config';
+
+.card {
+  width: 20rem;
+  min-height: 22rem;
+  margin: 1rem;
+  background-color: $card-background;
+  border-radius: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: $small-width) {
+  .card {
+    width: 18rem;
+    margin: 1rem 0;
+    min-height: 18rem;
+  }
+}
+
+.topImage {
+  object-fit: cover; // ensure image covers entire box, may crop image
+  width: 100%;
+  height: 8rem;
+  background-color: #000000;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.cardBottom {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.websiteButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem auto;
+  padding: 0.25rem 0.5rem;
+  width: fit-content;
+  min-height: 1.5rem;
+
+  border-radius: 3px;
+  background-color: $gray-background;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+.flexRow {
+  display: flex;
+  align-items: center;
+}
+
+.websiteColor {
+  color: $primary;
+  text-decoration: none;
+  &:hover {
+    color: $gray-background;
+  }
+}
+
+.websiteImage {
+  height: 1.2rem;
+  padding-right: 0.25rem;
+}
+
+.websiteNames {
+  font-size: 0.8rem;
+}

@@ -5,7 +5,7 @@ import { navContent } from '@components/NavBar';
 import BeakerSvg from '@components/BeakerSvg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMugHot, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import styles from '@styles/components/MobileNavBar.module.scss';
 
@@ -17,7 +17,11 @@ const MobileNavBar = ({ currentPage }) => {
       <div className={styles.hamburger}>
         {/* Chemistry Beaker Logo :) to return on home screen */}
         <Link href="/" passHref>
-          <a>
+          <a
+            role="button"
+            tabIndex={0}
+            onClick={() => toggleMenu(false)}
+          >
             <BeakerSvg className={styles.logo} />
           </a>
         </Link>
