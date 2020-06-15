@@ -4,22 +4,22 @@
   position: relative;
   min-height: 100vh;
   height: 100%;
-}
 
-.mainContent {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 2rem;
-
-  *:first-of-type::before {
+  .mainContent::before {
     height: 3rem;
     width: 100%;
     content: "";
   }
   // apply an after pseudo-element to the last element in the main container
-  *:last-of-type::after {
+  .mainContent::after {
     height: 50px;
     width: 100%;
     content: "";
   }
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
 }
