@@ -9,11 +9,12 @@
   padding-bottom: 0.5rem;
 }
 
-@media (max-width: $small-width) {
+@media (max-width: 850px) {
   .card {
     width: 18rem;
     margin: 1rem 0;
-    min-height: 18rem;
+    // remove min height if small screen makes it a single column
+    min-height: 0;
   }
 }
 
@@ -24,6 +25,15 @@
   background-color: #000000;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+}
+
+.cardTitle {
+  text-decoration: none;
+  color: $primary;
+  &:hover {
+    text-decoration: underline;
+    color: $hover-color;
+  }
 }
 
 .noMargin {
@@ -72,4 +82,8 @@
 
 .websiteNames {
   font-size: 0.8rem;
+}
+
+.shrinkCardBottom {
+  min-height: 0;
 }

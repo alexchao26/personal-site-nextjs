@@ -1,9 +1,12 @@
 export default [
   {
-    title: 'Introduction to WebSockets: Creating Responsive, Low-Latency Applications with WebSockets',
-    url: 'https://medium.com/@alexchaoo/introduction-to-websockets-creating-responsive-low-latency-applications-with-websockets-95b25e4ef52',
+    name: 'Introduction to WebSockets and Low Latency Applications',
+    image: '/images/websockets.jpg',
+    description: 'Learn about the history of WebSockets and implement them in a multiplayer tic-tac-toe game.',
+    website: 'https://medium.com/@alexchaoo/introduction-to-websockets-creating-responsive-low-latency-applications-with-websockets-95b25e4ef52',
   }, {
-    title: 'Written by Austin Ruby, co-creator of GraphQuill: <em>Real-Time GraphQL API Exploration with GraphQuill</em>',
-    url: 'https://dev.to/austinjruby/real-time-graphql-api-exploration-with-graphquill-2pp8',
+    name: 'More Coming Soon...',
+    image: '/images/working.png',
+    className: 'shrinkCardBottom',
   },
 ];
