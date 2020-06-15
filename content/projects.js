@@ -2,7 +2,7 @@ export default [
   {
     name: 'GraphQuill',
     image: '/images/graphquill-logo.png',
-    description: 'GraphQL DevTool to query your API from VSCode - Written in Node.js TypeScript',
+    description: 'GraphQL DevTool to query your API from VSCode, written in TypeScript & Node.js',
     websiteImage: '/images/vscode.svg',
     websiteName: 'VSCode MarketPlace',
     website: 'https://marketplace.visualstudio.com/items?itemName=sproutdeveloping.graphquill',
@@ -17,7 +17,7 @@ export default [
   }, {
     name: 'SocketMan',
     image: '/images/socketman.png',
-    description: 'Multiplayer Hangman using WebSockets, React/Redux, Node.js/Express, & NoSQL',
+    description: 'WebSockets-based Multiplayer Hangman Game',
     website: 'https://socket-man.herokuapp.com/',
     websiteImage: '/images/heroku.svg',
     websiteName: 'Play here!',
@@ -27,7 +27,7 @@ export default [
   }, {
     name: 'Personal  Website',
     image: 'images/beaker.svg',
-    description: 'This website, built in NextJS',
+    description: 'This website, built in Next.js',
     github: 'https://github.com/alexchao26/personal-site-nextjs',
     website: 'https://alexchao.dev',
     websiteName: 'alexchao.dev',

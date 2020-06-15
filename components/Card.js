@@ -28,7 +28,7 @@ export default ({
           href={website}
           target="_blank"
           rel="noreferrer noopener"
-          className={styles.cardTitle}
+          className={`${styles.cardTitle} ${styles.secondary}`}
         >
           <h2 className={styles.noMargin}>{name}</h2>
         </a>

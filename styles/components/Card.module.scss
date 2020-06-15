@@ -4,7 +4,7 @@
   width: 20rem;
   min-height: 22rem;
   margin: 1rem;
-  background-color: $card-background;
+  background-color: $secondary-background;
   border-radius: 0.5rem;
   padding-bottom: 0.5rem;
 }
@@ -36,6 +36,10 @@
   }
 }
 
+.secondary {
+  color: $secondary;
+}
+
 .noMargin {
   margin: 0;
 }
@@ -55,7 +59,7 @@
   min-height: 1.5rem;
 
   border-radius: 3px;
-  background-color: $gray-background;
+  background-color: $primary-background;
 
   &:hover {
     background-color: $hover-color;
@@ -71,7 +75,7 @@
   color: $primary;
   text-decoration: none;
   &:hover {
-    color: $gray-background;
+    color: $primary-background;
   }
 }
 

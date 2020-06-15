@@ -13,12 +13,13 @@
   border-radius: 50%;
 }
 
+.secondary {
+  color: $secondary;
+}
+
 .margin {
   &Sm {
     margin: 0.5rem 0;
-  }
-  &Md {
-    margin: 1rem 0;
   }
 }
 
@@ -32,6 +33,7 @@
     margin-bottom: 0;
   }
 }
+
 @media (max-width: $small-width) {
   .list {
     padding-left: 0;

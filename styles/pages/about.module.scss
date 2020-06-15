@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.secondary {
+  color: $secondary;
+}
+
 .margin {
   &Sm {
     margin: 0.5rem 0;
@@ -17,7 +21,7 @@
 }
 
 .borderCircle {
-  height: 10rem;
+  height: 15rem;
   border-radius: 50%;
 }
 
