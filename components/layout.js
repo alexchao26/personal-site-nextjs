@@ -10,7 +10,7 @@ export default ({ children, currentPage }) => (
   <div className={styles.page}>
     <Head>
       <title>Alex Chao</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.png" />
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
     </Head>
 

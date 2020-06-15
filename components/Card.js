@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import GithubStar from '@components/GithubStar';
 
 import styles from '@styles/components/Card.module.scss';
 
@@ -13,9 +12,10 @@ export default ({
   websiteImage,
   githubOwner,
   githubRepo,
+  className,
 }) => { // eslint-disable-line
   return (
-    <section className={styles.card}>
+    <section className={`${styles.card} ${styles[className]}`}>
       {image && (
       <img
         src={image}
@@ -24,7 +24,14 @@ export default ({
       />
       )}
       <article className={styles.cardBottom}>
-        <h2 className={styles.noMargin}>{name}</h2>
+        <a
+          href={website}
+          target="_blank"
+          rel="noreferrer noopener"
+          className={styles.cardTitle}
+        >
+          <h2 className={styles.noMargin}>{name}</h2>
+        </a>
         <p className={styles.description}>{description}</p>
         {website && websiteName
           && (
@@ -40,20 +47,23 @@ export default ({
             </a>
           </section>
           )}
-        <section className={styles.websiteButton}>
-          <a
-            href={`https://github.com/${githubOwner}/${githubRepo}`}
-            target="_blank"
-            rel="noreferrer noopener"
-            className={`${styles.flexRow} ${styles.websiteColor}`}
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              className={styles.websiteImage}
-            />
-            <span className={`${styles.websiteNames} ${styles.websiteColor}`}>Github Repo</span>
-          </a>
-        </section>
+        {githubRepo && githubOwner
+        && (
+          <section className={styles.websiteButton}>
+            <a
+              href={`https://github.com/${githubOwner}/${githubRepo}`}
+              target="_blank"
+              rel="noreferrer noopener"
+              className={`${styles.flexRow} ${styles.websiteColor}`}
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                className={styles.websiteImage}
+              />
+              <span className={`${styles.websiteNames} ${styles.websiteColor}`}>Github Repo</span>
+            </a>
+          </section>
+        )}
       </article>
     </section>
   );
