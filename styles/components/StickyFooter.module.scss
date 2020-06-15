@@ -1,11 +1,11 @@
 @import '../config';
 
 .container {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 4rem;
-
+  background-color: $gray-background;
   box-sizing: border-box;
 
   display: flex;
@@ -25,9 +25,4 @@
       color: $hover-color
     }
   }
-}
-
-// hacky solution to show the footer on mobile browsers that hide stuff under the menu bar
-.floatFooter {
-  bottom: 3rem;
 }
