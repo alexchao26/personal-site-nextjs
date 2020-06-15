@@ -11,7 +11,7 @@ export default [
     title: 'Back End',
     list: 'Node.js, Express.js, RESTful, GraphQL, SQL, NoSQL',
   }, {
-    title: 'Misc',
+    title: 'Miscellaneous',
     list: 'AWS, Docker, WebSockets, TDD/BDD, bash/zsh scripting',
   },
 ];
