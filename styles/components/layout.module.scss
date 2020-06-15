@@ -1,3 +1,5 @@
+@import '../config';
+
 .page {
   position: relative;
   min-height: 100vh;
@@ -9,6 +11,11 @@
   justify-content: center;
   padding-bottom: 2rem;
 
+  *:first-of-type::before {
+    height: 3rem;
+    width: 100%;
+    content: "";
+  }
   // apply an after pseudo-element to the last element in the main container
   *:last-of-type::after {
     height: 50px;

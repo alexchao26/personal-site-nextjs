@@ -1,8 +1,7 @@
-import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import NavBar from '@components/NavBar';
 import MobileNavBar from '@components/MobileNavBar';
-import Footer from '@components/Footer';
+import StickyFooter from '@components/StickyFooter';
 
 import styles from '@styles/components/layout.module.scss';
 
@@ -14,6 +13,7 @@ export default ({ children, currentPage }) => (
       <link rel="icon" href="/favicon.ico" />
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
     </Head>
+
     {/* One of these NavBars will be hidden depending on page size */}
     <NavBar currentPage={currentPage} />
     <MobileNavBar currentPage={currentPage} />
@@ -21,9 +21,6 @@ export default ({ children, currentPage }) => (
     {/* render the wrapped children (HOC) */}
     <main className={styles.mainContent}>{children}</main>
 
-    {/* Footer Component, isMobile prop is for making the footer appear about menu bar
-          on iOS Safari & Chrome (at least)
-      */}
-    <Footer />
+    <StickyFooter />
   </div>
 );

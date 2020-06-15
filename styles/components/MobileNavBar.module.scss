@@ -6,8 +6,29 @@ $menu-background-color: #2d2e2e;
 }
 
 .hamburger {
-  padding: 1rem 0 1rem 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  height: 3rem;
+  padding: 0.5rem 1rem;
   border-bottom: 1px solid $primary;
+  background-color: $gray-background;
+
+  .logo {
+    height: 2rem;
+    width: 2rem;
+
+    float: left;
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(66%) sepia(25%) saturate(5440%) hue-rotate(3deg) brightness(108%) contrast(106%);
+    }
+  }
+
+  svg {
+    float: right;
+  }
 }
 
 .menuOverlay {
@@ -16,7 +37,7 @@ $menu-background-color: #2d2e2e;
   // start width as zero, transition it to larger size on CSS style addition
   width: 0;
   z-index: 1;
-  left: 0;
+  right: 0;
   top: 0;
   background-color: $menu-background-color;
   overflow-x: hidden;
@@ -36,7 +57,7 @@ $menu-background-color: #2d2e2e;
   display: flex;
   flex-direction: column;
 
-  a, div {
+  a, svg {
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
     text-decoration: none;

@@ -23,19 +23,19 @@ export default [
     title: 'werqwer',
     list: 'AWS, Docker, WebSockets, TDD/BDD, bash/zsh scripting',
   }, {
-    title: 'werqwer',
+    title: 'werqwer2',
     list: 'AWS, Docker, WebSockets, TDD/BDD, bash/zsh scripting',
   }, {
-    title: 'werqwer',
+    title: 'werqwer3',
     list: 'AWS, Docker, WebSockets, TDD/BDD, bash/zsh scripting',
   }, {
-    title: 'werqwer',
+    title: 'werqwer4',
     list: 'AWS, Docker, WebSockets, TDD/BDD, bash/zsh scripting',
   }, {
-    title: 'werqwer',
+    title: 'werqwer6',
     list: 'AWS, Docker, WebSockets, TDD/BDD, bash/zsh scripting',
   }, {
-    title: 'werqwer',
+    title: 'werqwer234',
     list: 'AWS, Docker, WebSockets, TDD/BDD, bash/zsh scripting',
   },
 ];

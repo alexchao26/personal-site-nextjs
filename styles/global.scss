@@ -12,6 +12,6 @@ body {
   font-family: $font-stack;
   line-height: 1.5;
 
-  background-color: #222525;
-  color: #d3d3d3;
+  background-color: $gray-background;
+  color: $primary;
 }

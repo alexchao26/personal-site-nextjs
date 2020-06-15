@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import BeakerSvg from '@components/BeakerSvg';
 
 import styles from '@styles/components/NavBar.module.scss';
 
@@ -20,6 +21,13 @@ export const navContent = [
 
 const NavBar = ({ currentPage }) => (
   <div className={styles.container}>
+    {/* Logo SVG to return to home page */}
+    <Link href="/">
+      <a className={styles.noMargin}>
+        <BeakerSvg className={styles.logo} />
+      </a>
+    </Link>
+
     {navContent.map(({ link, text }) => (
       <Link key={text} href={link}>
         <a className={currentPage === link ? styles.currentPage : ''}>
