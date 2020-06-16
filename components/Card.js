@@ -34,6 +34,8 @@ export default ({
           <h2 className={styles.noMargin}>{name}</h2>
         </a>
         <p className={styles.description}>{description}</p>
+
+        {/* Buttons to websites & github repos */}
         {website && websiteName
           && (
           <section className={styles.websiteButton}>
@@ -44,7 +46,13 @@ export default ({
               className={`${styles.flexRow} ${styles.websiteColor}`}
             >
               {websiteImage
-              && <OptimizedImage src={websiteImage} alt={name} className={styles.websiteImage} />}
+              && (
+              <OptimizedImage
+                src={websiteImage}
+                alt={name}
+                className={styles.websiteImage}
+              />
+              )}
               <span className={`${styles.websiteNames} ${styles.websiteColor}`}>{websiteName}</span>
             </a>
           </section>
