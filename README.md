@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3ef3658f-14db-44c1-8751-4dadadc6595b/deploy-status)](https://app.netlify.com/sites/alexchao/deploys)
+
 # Personal Website
 
 ## Notes

@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import styles from '@styles/components/Card.module.scss';
+import OptimizedImage from './OptimizedImage';
 
 export default ({
   name,
@@ -17,7 +18,7 @@ export default ({
   return (
     <section className={`${styles.card} ${styles[className]}`}>
       {image && (
-      <img
+      <OptimizedImage
         src={image}
         alt={name}
         className={styles.topImage}
@@ -42,7 +43,8 @@ export default ({
               rel="noreferrer noopener"
               className={`${styles.flexRow} ${styles.websiteColor}`}
             >
-              {websiteImage && <img src={websiteImage} alt={name} className={styles.websiteImage} />}
+              {websiteImage
+              && <OptimizedImage src={websiteImage} alt={name} className={styles.websiteImage} />}
               <span className={`${styles.websiteNames} ${styles.websiteColor}`}>{websiteName}</span>
             </a>
           </section>

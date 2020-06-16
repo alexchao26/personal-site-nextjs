@@ -1,4 +1,5 @@
 import styles from '@styles/pages/about.module.scss';
+import OptimizedImage from '@components/OptimizedImage';
 
 const list = [
   'Native New Yorker',
@@ -10,8 +11,8 @@ const list = [
 export default () => (
   <div className={styles.container}>
     <h1 className={`${styles.marginSm} ${styles.secondary}`}>Alex Chao</h1>
-    <img
-      src="/images/silly1.jpg"
+    <OptimizedImage
+      src="silly.jpg"
       className={`${styles.borderCircle} ${styles.marginMd}`}
       alt="Alex"
     />
