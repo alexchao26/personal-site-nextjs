@@ -10,7 +10,7 @@ module.exports = withPlugins([
     inlineImageLimit: 8192,
     imagesFolder: 'images',
     imagesName: '[name]-[hash].[ext]',
-    handleImages: ['jpeg', 'png', 'ico'],
+    handleImages: ['jpeg', 'png'],
     removeOriginalExtension: false,
     optimizeImages: true,
     optimizeImagesInDev: false,
