@@ -5,7 +5,7 @@ import styles from '@styles/components/OptimizedImage.module.scss';
 export default ({ src, alt, className }) => (
   // do not optimize svg files
   /\.svg$/i.test(src)
-    ? <img src={`/images/${src}`} alt={alt} className={className} />
+    ? <img src={`/images/${src}`} alt={alt} className={`${className} ${styles.svgImage}`} />
     : (
       // className trickles down for sizing container and img tags
       <div className={className}>
