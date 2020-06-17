@@ -30,6 +30,9 @@ $menu-background-color: #2d2e2e;
 
   svg {
     float: right;
+    &:hover {
+      color: $hover-color;
+    }
   }
 }
 
