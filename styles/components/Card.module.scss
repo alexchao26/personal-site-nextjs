@@ -12,6 +12,8 @@
 @media (max-width: 850px) {
   .card {
     width: 18rem;
+    // set the max width for even smaller mobile screens. In line w/ max width of enclosing flexbox
+    max-width: 80vw;
     margin: 1rem 0;
     // remove min height if small screen makes it a single column
     min-height: 0;
