@@ -3,7 +3,7 @@
 export default [
   {
     title: 'Languages',
-    list: 'JavaScript (ES6+), GoLang',
+    list: 'Go, JavaScript (ES6+)',
   }, {
     title: 'Front End',
     list: 'React, Redux, SASS/SCSS, NextJS, Webpack, Babel',
