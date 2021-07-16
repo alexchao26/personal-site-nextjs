@@ -9,9 +9,9 @@ export default [
     list: 'React, Redux, SASS/SCSS, NextJS, Webpack, Babel',
   }, {
     title: 'Back End',
-    list: 'Node.js, Express.js, RESTful, GraphQL, SQL, NoSQL',
+    list: 'Go, Node.js (Express, Koa), RESTful, GraphQL, SQL, NoSQL',
   }, {
     title: 'Miscellaneous',
-    list: 'AWS, Docker, WebSockets, TDD/BDD, bash/zsh scripting',
+    list: 'GCP, AWS, Docker, WebSockets, TDD/BDD, zsh/bash',
   },
 ];
